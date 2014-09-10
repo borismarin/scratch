@@ -58,4 +58,4 @@ Popup1.setSize(160,465)
 
 //window.setTimeout(function(){Simulation.addBrightnessFunction(hhcell.electrical, hhcell.electrical.SimulationTree.hhpop[0].v, function(x){return (x+0.06)/0.06;})},500);
 //window.setTimeout(function(){Simulation.addDynamicVisualization(hhcell.electrical, hhcell.electrical.SimulationTree.hhpop[0].v, GEPPETTO.lightUpEntity, function(x){return (x+0.06)/0.06;})},500);
-window.setTimeout(function(){Simulation.addDynamicVisualization(hhcell.electrical, hhcell.electrical.SimulationTree.hhpop[0].v, GEPPETTO.setLocalRotationZ, function(x){return (x+0.06)/0.06;})},500);
+Simulation.addDynamicVisualization(hhcell.electrical, hhcell.electrical.SimulationTree.hhpop[0].v, GEPPETTO.setLocalRotationZ, function(x){return (x+0.06)/0.06;});
