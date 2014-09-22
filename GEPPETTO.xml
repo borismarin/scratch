@@ -25,6 +25,6 @@
 		</tns:aspect>	
 	</tns:entity>
 	
-	<tns:script>https://raw.githubusercontent.com/borismarin/scratch/pend_geppetto_script.js</tns:script>
+	<tns:script>https://raw.githubusercontent.com/borismarin/scratch/master/pend_geppetto_script.js</tns:script>
 	
 </tns:simulation>
