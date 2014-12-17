@@ -1,0 +1,6 @@
+<NML>
+    <IzhikevichCell a="1.1"/>
+    <IaFCell/>
+    <ConfusingSynapse foo="1.2"/>
+    <IaFCell/>
+</NML>

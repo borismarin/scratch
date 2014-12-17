@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="NML">
+	<xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="IzhikevichCell" type="IzhikevichCell" />
+        <xs:element name="IaFCell" type="IaFCell" />
+        <xs:element name="ConfusingSynapse" type="ConfusingSynapse" />
+      </xs:choice>
+	</xs:complexType>
+  </xs:element>
+
+  <xs:complexType abstract="true" name="Standalone"/>
+
+  <xs:complexType abstract="true" name="BaseCell">
+	<xs:complexContent>
+      <xs:extension base="Standalone">
+		<xs:attribute name="capacitance" type="xs:float" />
+	  </xs:extension>
+	</xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType abstract="true" name="BaseConfusingSynapse">
+	<xs:complexContent>
+      <xs:extension base="Standalone">
+		<xs:attribute name="foo" type="xs:float" />
+	  </xs:extension>
+	</xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="ConfusingSynapse">
+	<xs:complexContent>
+      <xs:extension base="BaseConfusingSynapse">
+		<xs:attribute name="bar" type="xs:float"/>
+	  </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="IaFCell">
+	<xs:complexContent>
+      <xs:extension base="BaseCell">
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="IzhikevichCell">
+	<xs:complexContent>
+      <xs:extension base="BaseCell">
+		<xs:attribute name="a" type="xs:float"/>
+	  </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>
