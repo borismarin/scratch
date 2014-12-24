@@ -1,6 +1,6 @@
 language: python
 env:
-  - OMV_ENGINE=jNeuroML
+  - OMV_ENGINE=genesis
   - OMV_ENGINE=NEURON
 
 before_install:
