@@ -1,6 +1,6 @@
 import os
 from subprocess import check_output as co
-import conda-api
+import conda_api
 
 
 engine = os.environ.get('OMV_ENGINE')
