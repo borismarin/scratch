@@ -1,3 +1,4 @@
+sudo: false
 language: python
 env:
   - OMV_ENGINE=genesis
@@ -16,3 +17,6 @@ install:
   - conda create --yes -n $OMV_VENV  python=$TRAVIS_PYTHON_VERSION pip numpy scipy conda-api
   - source activate $OMV_VENV
 
+script:
+  - python condatst.py
+  
