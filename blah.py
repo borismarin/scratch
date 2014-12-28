@@ -11,7 +11,7 @@ scr = ["wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
         "source activate $OMV_VENV"]
 print '{'
 for li in scr:
-    print li, ';'
+    print li + ';'
 print '}'
 
 
