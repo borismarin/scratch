@@ -2,6 +2,8 @@ scr = ["wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
         "ls",
         "bash miniconda.sh -b -p $TRAVIS_BUILD_DIR/conda",
         "export PATH=TRAVIS_BUILD_DIR/conda/bin:$PATH",
+        "ls",
+        "echo $PATH",
         "conda config --set always_yes yes --set changeps1 no",
         "conda update -q conda",
         "conda info -a",
